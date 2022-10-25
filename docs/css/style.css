@@ -440,7 +440,7 @@ textarea.input {
 #top-header {
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #ff77a9;
+  background-color: white;
 }
 
 .header-links li {
@@ -454,7 +454,7 @@ textarea.input {
 }
 
 .header-links li a {
-  color: white;
+  color: black;
 }
 
 .header-links li a:hover {
