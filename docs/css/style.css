@@ -1,9 +1,10 @@
 :root {
   --color-primary: white;
   --color-primary-dark: #3F72F4;
-  --color-text: ;
-  --color-gradient-1: ;
-  --color-gradient-2: ;
+  --color-text-primary: #2B2D42;
+  --color-text-grey: #8D99AE;
+  --color-gradient-1: #00dbde;
+  --color-gradient-2: #fc00ff;
 }
 
 /*
@@ -86,10 +87,6 @@ Table OF Contents
   margin: -3px;
   background-image: linear-gradient(to left, #00dbde, #fc00ff);
   border-radius: inherit;
-}
-
-#top-header {
-  /* display: none; */
 }
 
 body {
@@ -495,7 +492,7 @@ textarea.input {
 
 .header-logo .logo img {
   display: block;
-  max-height: 80px;
+  /* max-height: 80px; */
   /* transform: rotate(13deg); */
 }
 
