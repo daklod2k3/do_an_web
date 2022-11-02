@@ -221,16 +221,19 @@ nav > .container a span {
 
 
 article {
-    position: relative;
-    background-clip: padding-box;
     width: calc(100% - 200px);
     margin: 200px 100px 0px 100px;
-    background-color: var(--color-background-white);
+}
+
+
+.border-gradient {
+    position: relative;
+    background-clip: padding-box;
     border: 3px solid transparent;
     border-radius: 10px;
 }
 
-article:before {
+.border-gradient::before {
     content: "";
     position: absolute;
     inset: 0;
