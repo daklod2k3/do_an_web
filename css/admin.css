@@ -2,22 +2,52 @@
     --color-button-add: #64dd17;
     --color-button-dele: #f50057;
     display: flex;
-    background-color: transparent;
+    border: none;
+    padding-top: 0px;
+    padding: unset;
 }
 
+.fake-body{
+    all: unset;
+}
 
+#body::before {
+    all: unset;
+}
 
-.feature {
+#body > div {
+}
+
+#body > div {
+    margin-right: 10px;
+}
+
+#body > div + div {
+    margin-right: 0px;
+}
+
+.body-item {
     background-color: var(--color-background-white);
     border: 3px solid transparent;
-    border-radius: 10px;
     padding: 20px;
-    height: max-content;
-    max-width: 40%;
-    width: 100%;
-    margin: 40px;
+    border-radius: 10px;
     margin-top: 0px;
 }
+
+.add-btn{
+    background-color: var(--color-button-add);
+}
+
+.dele-btn {
+    background-color:var(--color-button-dele);
+}
+
+/* Chức năng */
+.feature {
+    max-width: 35%;
+    width: 100%;
+}
+
 
 
 
@@ -32,23 +62,40 @@
 }
 
 /* Form */
-.product-search {
-    max-width: ;
+
+form .container{
+    display: flex;
 }
 
-
-.product-search label {
+.feature-form select {
     display: inline-block;
-    max-width: 120px;
+    max-width: 125px;
     width: 100%;
-    margin: auto;
     margin-bottom: 15px;
+    height: 30px;
 }
 
-.product-search input{
-    display: inline-block;
-    width: calc(100% - 130px);
+.feature-form label {
+    max-width: 125px;
+    width: 100%;
+}
+.feature-form input {
+
     height: 30px;
+}
+
+.feature-form input[type = "text"]{
+    width: calc(100% - 135px);
+}
+
+.feature-form .price-product-input {
+    width: 20px !important;
+}
+
+
+
+.feature-form input[type="range"]{
+    /* width: 100%; */
 }
 
 
@@ -56,14 +103,14 @@
     height: 100px;
 }
 
-.product-search form > div {
-    margin-top: 10px;
+.feature form > div {
+    /* margin: auto; */
     text-align: center;
 }
 
 
 
-.product-search input[type="submit"] {
+.feature-form input[type="submit"] {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
@@ -77,17 +124,14 @@
 }
 
 
+/* Product search */
 
-.add-btn{
-    background-color: var(--color-button-add);
-}
 
-.dele-btn {
-    background-color:var(--color-button-dele);
-}
 
 /* Product view */
 .product-view {
+    height: max-content;
+
 }
 
 .product-view .container {
@@ -116,3 +160,9 @@
     max-width: 10%;
 }
 
+
+
+/* Product add */
+.product-add {
+    margin-top: 10px;
+}

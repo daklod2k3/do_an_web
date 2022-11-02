@@ -55,7 +55,7 @@ ul, ol {
 
 /* Header */
 header{
-    padding: 15px 10px 10px 10px;
+    padding-top: 15px;
     z-index: 9999;
     background-image: var(--color-gradient);
     width: 100%;
@@ -187,7 +187,7 @@ header > .container {
 /* Navigation */
 
 nav {
-    margin: 0px 100px 0px 100px;
+    margin: 0px 100px 5px 100px;
     margin-top: 20px;
     background-color: var(--color-background-white);
     position: relative;
@@ -222,10 +222,23 @@ nav > .container a span {
 
 article {
     width: calc(100% - 200px);
-    margin: 200px 100px 0px 100px;
+    margin: 180px 0px 0px 100px;
+    padding: 30px 15px 30px 15px;
 }
 
 
+.fake-body {
+    height: 10px;
+    background-color: var(--color-background-white);
+    margin: 0px 100px 0px 100px;
+    margin-top: 8px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+
+/* Custom */
 .border-gradient {
     position: relative;
     background-clip: padding-box;
