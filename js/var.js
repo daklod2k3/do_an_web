@@ -77,7 +77,7 @@ function renData(){
         navBar.appendChild(link)
     })
 
-    $('#body').load('admin.html') //Sửa admin.html thành tên file của mình
+    $('#body').load('./admin.html') //Sửa admin.html thành tên file của mình
 
 
 }
