@@ -222,7 +222,6 @@ nav > .container a span {
 article {
     width: calc(100% - 200px);
     margin: 200px 100px 0px 100px;
-    height: 1000px;
     background-color: var(--color-background-white);
     border: 3px solid transparent;
     border-radius: 10px;
