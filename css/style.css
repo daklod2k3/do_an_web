@@ -17,7 +17,7 @@
 
     background-image: var(--color-gradient);
     
-    font-family: 'verdana', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -30,7 +30,6 @@ body {
 
 
 a {
-    color: #2B2D42;
     font-weight: 200;
     transition: 0.2s color;
     text-decoration: none;
@@ -187,6 +186,7 @@ header > .container {
 /* Navigation */
 
 nav {
+    color: var(--color-text-grey) !important;
     margin: 0px 100px 5px 100px;
     margin-top: 20px;
     background-color: var(--color-background-white);
