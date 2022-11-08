@@ -31,31 +31,27 @@ if (!account) {
     localStorage.setItem('acc', JSON.stringify(account))
 }
 
-var products = localStorage.getItem('products')
+var products = localStorage.getItem('product')
 products = JSON.stringify(products)
-class product {
-    constructor (name, cate, price, des, img){
-        product.count++;
-        this.id = product.count + 10000;
+if (!product) {
+    var product = function (id, name, price, decrip, img){
+        this.id = id;
         this.name = name;
-        this.cate = categories[cate];
         this.price = price;
-        this.des = des;
+        this.decrip = decrip;
         this.img = img
     }
-}
-product.count = 0
-if (products) {
-    var tmp = new product('Giày Thể Thao Nam Hunter Street Cream',1,781000,'Mô tả:  ', './img/product1.webp')
+    
+    
+    var tmp = new product(1,'Giày Thể Thao Nam Hunter Street Cream DSMH10400KEM (Kem)',781000,'Miêu tả:  ', '.img/product1.webp')
+    
     products = []
     products.push(tmp)
-    products.push(new product('Giày Thể Thao Bé Trai', 3, 437000, 'Mô tả: ', './img/product2.webp'))
 }
 
 
 function renData(){
 
-    $('#body').load('./admin.html',adminRen) //Sửa admin.html thành tên file của mình
     // Search selection
     var srchSelect =  document.querySelector('.input-select')
     categories.forEach((ele, index) => {
@@ -81,10 +77,8 @@ function renData(){
         navBar.appendChild(link)
     })
 
-    
+    $('#body').load('./home.html') //Sửa admin.html thành tên file của mình
 
-    
-    
 
 }
 
