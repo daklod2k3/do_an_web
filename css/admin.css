@@ -1,11 +1,12 @@
 #body{
     --color-button-add: #64dd17;
-    --color-button-dele: #f50057;
+    --color-button-dlt: #f50057;
     display: flex;
     border: none;
     padding-top: 0px;
     padding: unset;
     color: var(--color-text-grey);
+    background-color: transparent;
 }
 
 .fake-body{
@@ -14,9 +15,6 @@
 
 #body::before {
     all: unset;
-}
-
-#body > div {
 }
 
 #body > div {
@@ -35,13 +33,19 @@
     margin-top: 0px;
 }
 
-.add-btn{
+#body form .search-btn{
+    background-color: var(--color-primary-dark);
+}
+
+#body form .add-btn{
     background-color: var(--color-button-add);
 }
 
-.dele-btn {
+#body form .dele-btn {
     background-color:var(--color-button-dele);
 }
+
+
 
 /* Chức năng */
 .feature {
@@ -64,12 +68,17 @@
 
 /* Form */
 
-form .container{
+#body form .container{
     display: flex;
     margin-bottom: 10px;
-    justify-content: center;
+    padding: auto;
 }
 
+#body form .container > *{
+    flex-grow: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 /* form .container > *:first-child{
     margin-right: 10px;
 } */
@@ -83,31 +92,26 @@ form .container{
 }
 
 .feature-form label {
+    color: var(--color-text-dark);
+    text-align: left;
     margin-top: 5px;
-    margin-right: 15px;
+    margin-right: 10px;
     max-width: 125px;
-    width: 100%;
+    width: 150px;
 }
 .feature-form input {
     height: 30px;
+    margin: auto;
+    margin-right: 0px;
 }
 
-.feature-form input[type = "text"]{
-    width: 100%;
-}
 
-.feature-form .price-product-input {
-    max-width: 20% !important;
-}
+
 
 .feature-form .price-product-line{
     background-color: var(--color-text-grey);
-    width: 20px;
     height: 1px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: auto 20px;
 }
 
 .price-product-input:after{
@@ -135,34 +139,40 @@ form .container{
 
 
 .feature-form input[type="submit"] {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    width: 40%;
-    height: 45px;
-    margin: 10px;
+    font-size: 15px;
+    width: 77px;
+    height: 37px;
     color: var(--color-background-white);
     border: none;
     border-radius: 5px;
     
 }
 
+/* Product add */
+.product-add {
+    margin-top: 10px;
+}
 
 /* Product search */
+.feature-form input[type = "text"]{
+    width: 100%;
+}
+
+.feature-form .price-product-input {
+    max-width: 100px;
+}
 
 
 
 /* Product view */
 .product-view {
     height: max-content;
-
+    width: 100%;
 }
 
-.product-view .container {
-    /* display: flex; */
-    /* border: 2px solid var(--color-text-dark);
-    border-radius: 10px;
-    padding: 10px; */
+/* .product-view .container {
+    display: flex;
+    flex-direction: column;
 }
 
 .product-view .container .item {
@@ -170,23 +180,84 @@ form .container{
     border: 2px solid var(--color-text-dark);
     padding: 5px;
     border-radius: 7px;
-}
-
-.product-view .des {
-    display: inline-block;
-}
-
-.product-view span {
-    display: block;
-}
-
-.product-view .item img {
+    display: flex;
+} */
+/* .product-view .item img {
     max-width: 10%;
 }
 
-
-
-/* Product add */
-.product-add {
-    margin-top: 10px;
+.product-view .item .des{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
 }
+ */
+
+
+/* .product-title {
+    font-size: 18px;
+    color: var(--color-text-dark);
+    font-weight: 700;
+}
+
+.product-money {
+    color: var(--color-text-dark);
+}
+
+.product-qty {
+    color: var(--color-text-dark);
+} */
+
+
+
+.product-view table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.product-view td {
+    padding: 5px;
+    max-width: max-content;
+}
+
+.product-view thead td {
+    height: 35px;
+    background-color: var(--color-primary-dark);
+    color: white;
+}
+
+.product-view td{
+    border: 2px solid var(--color-text-white);
+    background-color: var(--color-primary-dark);
+    color: white;
+}
+
+.product-view td > *{
+    margin: auto;
+}
+
+table .tdImg {
+    max-width: 100px;
+}
+
+.product-view td > img {
+    max-width: 100px;
+}
+
+.product-view a {
+    height: 30px !important;
+    width: 30px !important;
+    border: none;
+    border-radius: 3px;
+}
+
+.product-view .btn-edt{
+    margin-bottom: 10px;
+    background-color: var(--color-button-add);
+}
+
+.product-view .btn-dlt {
+    background-color: var(--color-button-dlt);
+}
+

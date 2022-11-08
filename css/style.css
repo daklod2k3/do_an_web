@@ -29,32 +29,10 @@ body {
 }
 
 
-a {
-    font-weight: 200;
-    transition: 0.2s color;
-    text-decoration: none;
-}
-
-
-a:hover, a:focus {
-    color: var(--color-primary-dark);
-    text-decoration: none;
-    outline: none;
-}
-
-ul, ol {
-    margin: 0;
-    padding: 0;
-    list-style: none
-}
-
-
-
-
 
 /* Header */
 header{
-    padding-top: 15px;
+    padding-top: 20px;
     z-index: 9999;
     background-image: var(--color-gradient);
     width: 100%;
@@ -64,8 +42,22 @@ header{
     overflow: hidden;
 }
 
+header a {
+    font-weight: 200;
+    transition: 0.2s color;
+    text-decoration: none;
+}
+
+
+header a:hover, a:focus {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+    outline: none;
+}
+
+
 header > .container {
-    margin: 0px 50px 0px 50px;
+    margin: 0px 170px 0px 170px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -87,6 +79,7 @@ header > .container {
 
 .header-search form {
     display: flex;
+    justify-content: center;
     /* margin-top: 15px; */
 }
 
@@ -94,7 +87,6 @@ header > .container {
     height: 40px;
     margin: 0px;
     padding-left: 15px;
-    flex-grow: 0.5;
     border: 1px solid var(--color-border-white-gray);
     border-radius: 40px 0px 0px 40px;
 }
@@ -103,12 +95,11 @@ header > .container {
 .header-search form .input {
     border: 1px solid var(--color-border-white-gray);
     padding: 0px 15px;
-    flex-grow: 3;
     height: 40px;
+    width: 80%;
 }
 
 .header-search form .search-btn {
-    flex-grow: 1;
     margin-left: -6px;
     height: 40px;
     min-width: 55px;
@@ -224,6 +215,7 @@ article {
     width: calc(100% - 200px);
     margin: 180px 0px 0px 100px;
     padding: 30px 15px 30px 15px;
+    background: var(--color-background-white);
 }
 
 
@@ -242,7 +234,7 @@ article {
 .border-gradient {
     position: relative;
     background-clip: padding-box;
-    border: 3px solid transparent;
+    border: 3px solid transparent !important;
     border-radius: 10px;
 }
 
